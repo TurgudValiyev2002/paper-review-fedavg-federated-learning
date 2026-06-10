@@ -1,8 +1,8 @@
 # Paper Review: FedAvg and Federated Learning
 
-![Centralized federated learning protocol](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Centralized_federated_learning_protocol.png/1024px-Centralized_federated_learning_protocol.png)
+![Federated learning overview](review_artifacts/federated_learning_overview.png)
 
-Figure: centralized federated learning protocol. Source: MarcT0K, Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Figure: overview of the federated learning loop. Clients train local models, upload model updates, and the server aggregates them into a new global model.
 
 ## Motivation
 
@@ -53,7 +53,7 @@ The basic FedAvg loop is:
 
 ![FedAvg process diagram](review_artifacts/fedavg_process_diagram.png)
 
-The Wikimedia figure above gives the high-level idea: client devices train locally, only model updates move to the server, and the server aggregates updates into a global model. The local diagram here focuses specifically on the FedAvg round used in this review.
+The overview figure above gives the high-level idea: client devices train locally, only model updates move to the server, and the server aggregates updates into a global model. The second diagram focuses specifically on the FedAvg round used in this review.
 
 ## Review Artifacts
 
@@ -64,6 +64,7 @@ The repository includes:
 - `review_artifacts/fedavg_algorithm_steps.csv`
 - `review_artifacts/fedavg_limitations.csv`
 - `review_artifacts/fedavg_process_diagram.png`
+- `review_artifacts/federated_learning_overview.png`
 - `review_artifacts/fedprox_proximal_concept.png`
 - `review_artifacts/federated_learning_open_problems_map.png`
 - `review_artifacts/adaptive_federated_optimizer.png`
