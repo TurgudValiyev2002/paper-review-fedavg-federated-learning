@@ -1,5 +1,9 @@
 # Paper Review: FedAvg and Federated Learning
 
+![Centralized federated learning protocol](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Centralized_federated_learning_protocol.png/1024px-Centralized_federated_learning_protocol.png)
+
+Figure: centralized federated learning protocol. Source: MarcT0K, Wikimedia Commons, licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Motivation
 
 Federated learning is not just "training without sharing data." It is a full learning setting with communication limits, non-IID client data, unreliable devices, privacy risks, and server-side optimization choices. This review studies FedAvg and three related papers to understand the method and its limitations.
@@ -48,6 +52,8 @@ The basic FedAvg loop is:
 6. The new global model is sent out again.
 
 ![FedAvg process diagram](review_artifacts/fedavg_process_diagram.png)
+
+The Wikimedia figure above gives the high-level idea: client devices train locally, only model updates move to the server, and the server aggregates updates into a global model. The local diagram here focuses specifically on the FedAvg round used in this review.
 
 ## Review Artifacts
 

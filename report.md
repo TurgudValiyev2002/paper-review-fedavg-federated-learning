@@ -1,5 +1,9 @@
 # Report: FedAvg and Federated Learning
 
+![Centralized federated learning protocol](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Centralized_federated_learning_protocol.png/1024px-Centralized_federated_learning_protocol.png)
+
+Figure source: MarcT0K, Wikimedia Commons, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Motivation
 
 We reviewed FedAvg because it is the baseline algorithm behind much of federated learning. The important question is not only how it works, but also where it fails.
