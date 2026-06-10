@@ -1,0 +1,4 @@
+limitation,why_it_matters
+privacy is not automatic,Model updates can still reveal information without secure aggregation or differential privacy.
+client drift,Local training can move clients in different directions under non-IID data.
+systems heterogeneity,"Devices differ in compute, battery, and network quality."
