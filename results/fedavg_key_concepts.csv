@@ -1,6 +1,0 @@
-concept,interpretation
-communication efficiency,Local epochs reduce how often clients communicate with the server.
-data privacy direction,"Raw user data stays on devices, although updates can still leak information."
-non-IID challenge,Client data may have very different distributions.
-weighted averaging,Large clients influence the global model more than small clients.
-baseline importance,FedAvg became a reference algorithm for later federated learning work.

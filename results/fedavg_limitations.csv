@@ -1,4 +1,6 @@
-limitation,why_it_matters
-privacy is not automatic,Model updates can still reveal information without secure aggregation or differential privacy.
-client drift,Local training can move clients in different directions under non-IID data.
-systems heterogeneity,"Devices differ in compute, battery, and network quality."
+issue,why_it_matters
+non-IID data,"Client data distributions can differ strongly, causing client drift."
+systems heterogeneity,"Clients may have different compute, battery, and network quality."
+privacy leakage,"Raw data stays local, but model updates can still leak information."
+communication cost,Large models and many clients make communication expensive.
+server optimizer choice,Adaptive server updates can change convergence behavior.

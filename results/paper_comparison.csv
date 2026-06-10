@@ -1,0 +1,5 @@
+paper,year,what_they_did,lesson
+Communication-Efficient Learning of Deep Networks from Decentralized Data,2017,Introduced Federated Learning and FedAvg for decentralized training with local client updates and server averaging.,Communication efficiency is the central design pressure in practical federated learning.
+Federated Optimization in Heterogeneous Networks,2018,"Proposed FedProx, which adds a proximal term to reduce instability from heterogeneous client data and systems.","FedAvg is a baseline, but heterogeneity requires extra control against client drift."
+Advances and Open Problems in Federated Learning,2019,"Surveyed federated learning progress and open problems across optimization, privacy, robustness, and systems.",A real FL system must be evaluated beyond test accuracy.
+Adaptive Federated Optimization,2020,"Developed federated versions of adaptive optimizers such as Adam, Adagrad, and Yogi.","The server optimizer is an important design choice, not a minor implementation detail."

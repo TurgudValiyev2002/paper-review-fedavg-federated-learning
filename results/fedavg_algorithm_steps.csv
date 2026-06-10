@@ -1,7 +1,7 @@
-step,fedavg_action,meaning
-1,Server initializes global model,All clients start from the same model.
-2,Server selects clients,Only a subset may participate in each round.
-3,Clients train locally,Each client updates the model on private local data.
-4,Clients send updates,"The server receives model weights or weight changes, not raw data."
-5,Server averages updates,Updates are weighted by client dataset size.
-6,New global model is broadcast,The process repeats for multiple communication rounds.
+step,description
+1,Server sends current global model to selected clients.
+2,Each client trains locally for one or more epochs.
+3,Clients return model updates or updated model weights.
+4,"Server averages client updates, usually weighted by local data size."
+5,The averaged model becomes the next global model.
+6,The process repeats for multiple communication rounds.
