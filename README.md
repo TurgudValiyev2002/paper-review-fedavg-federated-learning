@@ -24,6 +24,8 @@ The goal is to understand what FedAvg does, why it became a baseline, and what l
 | [Advances and Open Problems in Federated Learning](https://arxiv.org/abs/1912.04977) | 2019 | Organized the broader FL research problems: privacy, security, optimization, fairness, and systems. |
 | [Adaptive Federated Optimization](https://arxiv.org/abs/2003.00295) | 2020 | Studied adaptive server optimizers such as federated Adam, Adagrad, and Yogi. |
 
+Short one-page notes for each paper are available in `paper_notes/`.
+
 ## What The Papers Did
 
 McMahan et al. introduced FedAvg: clients train locally, send updates, and the server averages them. The key result is communication efficiency: local training can reduce how often clients need to communicate.
@@ -45,15 +47,19 @@ The basic FedAvg loop is:
 5. Server averages updates by client data size.
 6. The new global model is sent out again.
 
-## Results Produced In This Repository
+## Review Artifacts
 
-The repository creates:
+The repository includes:
 
 - `results/reviewed_papers.csv`
 - `results/paper_comparison.csv`
 - `results/fedavg_algorithm_steps.csv`
 - `results/fedavg_limitations.csv`
 - `results/fedavg_process_diagram.png`
+- `paper_notes/01_mcmahan_fedavg.md`
+- `paper_notes/02_li_fedprox.md`
+- `paper_notes/03_kairouz_open_problems.md`
+- `paper_notes/04_reddi_adaptive_federated_optimization.md`
 
 ## Interpretation
 
