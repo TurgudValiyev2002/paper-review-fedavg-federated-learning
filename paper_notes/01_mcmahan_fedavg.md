@@ -3,6 +3,10 @@
 Paper: "Communication-Efficient Learning of Deep Networks from Decentralized Data"  
 Link: https://arxiv.org/abs/1602.05629
 
+![FedAvg process diagram](../review_artifacts/fedavg_process_diagram.png)
+
+The diagram shows the core FedAvg round: server model, local client training, client updates, weighted aggregation, and a new global model.
+
 This is the core FedAvg paper. The authors introduced federated learning as a setting where many clients train a shared model while keeping raw data decentralized. The practical motivation is clear: mobile and edge devices contain useful data, but sending all raw data to a central server can be expensive, sensitive, or impossible.
 
 The main method is Federated Averaging. The server sends the current model to selected clients. Clients train locally for one or more epochs. Then they send updates or updated weights back to the server. The server averages them, usually weighted by client dataset size.

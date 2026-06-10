@@ -16,9 +16,11 @@ McMahan et al. proposed local client training plus server averaging. Li et al. i
 
 We extracted each paper's main contribution, limitation, and lesson. We also built a FedAvg process diagram and tables for algorithm steps and limitations.
 
+![FedAvg process diagram](review_artifacts/fedavg_process_diagram.png)
+
 ## Review Artifacts
 
-The repository contains reviewed-paper tables, a paper-comparison table, a FedAvg step table, a limitation table, a process diagram, and one short note for each reviewed paper in `paper_notes/`.
+The repository contains reviewed-paper tables, a paper-comparison table, a FedAvg step table, a limitation table, process/design diagrams in `review_artifacts/`, and one short note for each reviewed paper in `paper_notes/`.
 
 ## Interpretation
 

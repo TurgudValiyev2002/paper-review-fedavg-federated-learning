@@ -3,6 +3,10 @@
 Paper: "Adaptive Federated Optimization"  
 Link: https://arxiv.org/abs/2003.00295
 
+![Adaptive federated optimizer](../review_artifacts/adaptive_federated_optimizer.png)
+
+The diagram shows that the server is not passive: it can use update history and adaptive optimization before producing the next global model.
+
 This paper studies the server optimizer in federated learning. In simple FedAvg, the server averages client updates. Reddi et al. asked whether adaptive optimization methods, such as Adam, Adagrad, or Yogi, can improve federated training.
 
 The motivation is that federated learning often has heterogeneous data and unstable update patterns. In centralized deep learning, adaptive optimizers are useful because they adjust update sizes based on gradient history. The paper brings this idea to the federated server.

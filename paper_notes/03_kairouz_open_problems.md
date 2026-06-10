@@ -3,6 +3,10 @@
 Paper: "Advances and Open Problems in Federated Learning"  
 Link: https://arxiv.org/abs/1912.04977
 
+![Federated learning open problems](../review_artifacts/federated_learning_open_problems_map.png)
+
+The diagram shows why this survey matters: federated learning sits at the center of privacy, security, fairness, optimization, systems, and personalization problems.
+
 This paper is a broad survey of federated learning. It is useful because it prevents us from thinking about FL only as an optimization algorithm. Federated learning is a system-level and privacy-sensitive setting.
 
 The paper discusses many dimensions: optimization, communication, privacy, security, fairness, personalization, robustness, and systems constraints. This matters because a federated model can have good test accuracy and still be weak in practice if it leaks private information, fails under client dropout, or performs unfairly across user groups.

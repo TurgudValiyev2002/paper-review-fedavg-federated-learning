@@ -47,15 +47,20 @@ The basic FedAvg loop is:
 5. Server averages updates by client data size.
 6. The new global model is sent out again.
 
+![FedAvg process diagram](review_artifacts/fedavg_process_diagram.png)
+
 ## Review Artifacts
 
 The repository includes:
 
-- `results/reviewed_papers.csv`
-- `results/paper_comparison.csv`
-- `results/fedavg_algorithm_steps.csv`
-- `results/fedavg_limitations.csv`
-- `results/fedavg_process_diagram.png`
+- `review_artifacts/reviewed_papers.csv`
+- `review_artifacts/paper_comparison.csv`
+- `review_artifacts/fedavg_algorithm_steps.csv`
+- `review_artifacts/fedavg_limitations.csv`
+- `review_artifacts/fedavg_process_diagram.png`
+- `review_artifacts/fedprox_proximal_concept.png`
+- `review_artifacts/federated_learning_open_problems_map.png`
+- `review_artifacts/adaptive_federated_optimizer.png`
 - `paper_notes/01_mcmahan_fedavg.md`
 - `paper_notes/02_li_fedprox.md`
 - `paper_notes/03_kairouz_open_problems.md`

@@ -8,7 +8,7 @@ import pandas as pd
 from matplotlib.patches import FancyArrowPatch, Rectangle
 
 
-RESULTS = Path("results")
+RESULTS = Path("review_artifacts")
 
 
 def save_process_diagram() -> None:
