@@ -55,6 +55,18 @@ The basic FedAvg loop is:
 
 The overview figure above gives the high-level idea: client devices train locally, only model updates move to the server, and the server aggregates updates into a global model. The second diagram focuses specifically on the FedAvg round used in this review.
 
+## Critical Limitations
+
+FedAvg is simple and influential, but it is not a complete federated learning solution.
+
+- FedAvg can drift when client data is strongly non-IID, because local updates point in different directions.
+- Communication is reduced, but not removed. Large models and frequent rounds can still be expensive.
+- Sending model updates is not the same as guaranteeing privacy. Updates can still leak information without secure aggregation, differential privacy, or other protections.
+- Client sampling can introduce fairness problems because some users or devices may participate less often.
+- FedProx and adaptive server optimizers improve stability, but they add hyperparameters and do not remove all heterogeneity problems.
+
+The main lesson is that FedAvg is a baseline, not an endpoint. A real FL system needs optimization, privacy, robustness, fairness, and systems engineering together.
+
 ## Review Artifacts
 
 The repository includes:

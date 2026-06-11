@@ -26,6 +26,10 @@ We extracted each paper's main contribution, limitation, and lesson. We also bui
 
 The repository contains reviewed-paper tables, a paper-comparison table, a FedAvg step table, a limitation table, process/design diagrams in `review_artifacts/`, and one short note for each reviewed paper in `paper_notes/`.
 
+## Critical Limitations
+
+FedAvg reduces communication, but it does not solve non-IID drift, privacy leakage from updates, unreliable client participation, or fairness. FedProx and adaptive server optimizers help, but they introduce extra hyperparameters and still do not make federated learning easy.
+
 ## Interpretation
 
 FedAvg is simple and important, but real federated learning needs more. Non-IID data causes client drift, systems heterogeneity affects participation, and privacy is not automatic just because raw data stays local.
